@@ -1,130 +1,60 @@
-# Self‑Attentive Sequential Recommendation (Enriched Features) – PyTorch
+# \# SASRec-Enriched – Self-Attentive Sequential Recommendation with Enriched Features (PyTorch)
 
 # 
 
-# Author: Trong Ho – hdhtrong@gmail.com
+# \*\*Author:\*\* Trong Ho – hdhtrong@gmail.com  
 
 # 
 
-# This repository implements self‑attentive sequential recommendation models enriched with user ratings and item categories for improved recommendation accuracy, based on:
+# This repository implements \*\*self-attentive sequential recommendation models enriched with user ratings and item categories\*\* for improved recommendation accuracy, based on:
 
 # 
 
-# Self‑Attentive Sequential Recommendation Models Enriched with More Features
+# > \*Self-Attentive Sequential Recommendation Models Enriched with More Features\*  
 
-# ACM DL
-
-# 
-
-# It extends SASRec/TiSASRec by incorporating auxiliary information into input representations, improving sequential recommendation performance on public datasets (e.g., ml‑1m).
+# > \[ACM DL](https://dl.acm.org/doi/10.1145/3695719.3695727)
 
 # 
 
-# Features
+# It extends SASRec/TiSASRec by incorporating auxiliary information into input representations, improving sequential recommendation performance on public datasets (e.g., `ml-1m`).
 
 # 
 
-# Self‑attention based sequential recommendation
+# ---
 
 # 
 
-# Enriched with user ratings \& item categories
+# \## Features
 
 # 
 
-# PyTorch v1.6 implementation
+# \- Self-attention based sequential recommendation  
+
+# \- Enriched with \*\*user ratings\*\* \& \*\*item categories\*\*  
+
+# \- PyTorch v1.6 implementation  
+
+# \- Pretrained models included for inference  
+
+# \- Code partially based on \[pmixer/TiSASRec.pytorch](https://github.com/pmixer/TiSASRec.pytorch/tree/master)
 
 # 
 
-# Pretrained models included for inference
+# ---
 
 # 
 
-# Code structure partially based on/modified from pmixer/TiSASRec.pytorch
+# \## Installation
 
 # 
 
-# Installation
+# ```bash
 
-# git clone <this‑repo‑url>  
+# git clone <this-repo-url>
 
-# cd <this‑repo>  
+# cd <this-repo>
 
-# pip install ‑r requirements.txt  
+# pip install -r requirements.txt
 
-# 
 
-# Quick Start
-
-# Training
-
-# python main.py --dataset=ml‑1m --train\_dir=default --device=cuda  
-
-# 
-
-# Inference with Pretrained Model
-
-# python main.py \\
-
-# &nbsp; --dataset=ml‑1m \\
-
-# &nbsp; --train\_dir=default \\
-
-# &nbsp; --dropout\_rate=0.2 \\
-
-# &nbsp; --device=cuda \\
-
-# &nbsp; --state\_dict\_path='ml‑1m\_default/TiSASRec.epoch=601.lr=0.001.layer=2.head=1.hidden=50.maxlen=200.pth' \\
-
-# &nbsp; --inference\_only=true \\
-
-# &nbsp; --maxlen=200  
-
-# 
-
-# Notes
-
-# 
-
-# Code based in part on the PyTorch port of TiSASRec: pmixer/TiSASRec.pytorch
-
-# 
-
-# Pretrained models are provided for quick testing
-
-# 
-
-# For detailed explanation of the model architecture and sequential recommendation background, refer to the original paper and referenced repos
-
-# 
-
-# References
-
-# 
-
-# Original TensorFlow repo: JiachengLi1995/TiSASRec
-
-# 
-
-# PyTorch implementation referenced: pmixer/TiSASRec.pytorch
-
-# 
-
-# Paper BibTeX:
-
-# 
-
-# @inproceedings{li2020time,
-
-# &nbsp; title={Time Interval Aware Self‑Attention for Sequential Recommendation},
-
-# &nbsp; author={Li, Jiacheng and Wang, Yujie and McAuley, Julian},
-
-# &nbsp; booktitle={Proceedings of the 13th International Conference on Web Search and Data Mining},
-
-# &nbsp; pages={322‑330},
-
-# &nbsp; year={2020}
-
-# }
 
